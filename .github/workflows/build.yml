@@ -1,0 +1,26 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '24 */24 * * *'  # Once a day
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build and test with Rake
+        run: |
+          gem install bundler jekyll
+          bundle install --jobs 4 --retry 3
+          bundle exec jekyll build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          allow_empty_commit: true
+          cname: www.reilysiegel.com

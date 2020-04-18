@@ -23,7 +23,7 @@ projects:
   #   - stars
   limit: 9
   exclude:
-    archived: false
+    archived: true
     forks: true
     projects:
     # - repo-name
@@ -47,12 +47,14 @@ projects:
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Clojure
+    web_url: https://github.com/topics/clojure
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/clojure/clojure.png
 
-  - name: Web design
+  - name: ClojureScript
+    web_url: https://github.com/topics/clojurescript
+    image_url: https://raw.githubusercontent.com/github/explore/b1c13b29315ff30876640afcef2cc122680a3c6c/topics/clojurescript/clojurescript.png
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Bitcoin
+    web_url: https://github.com/topics/bitcoin
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bitcoin/bitcoin.png
